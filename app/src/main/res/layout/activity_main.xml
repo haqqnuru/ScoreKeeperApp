@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:src="@drawable/viking" />
+
+            <TextView
+                android:id="@+id/vikingScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="50sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:src="@drawable/minnesota" />
+
+
+            <Button
+                style="@style/score_button"
+                android:background="@android:color/holo_purple"
+                android:onClick="vikingsTouchDown"
+                android:text="@string/touch_down" />
+
+            <Button
+                style="@style/score_button"
+                android:background="@color/yellow"
+                android:onClick="vikingsExtra"
+                android:text="@string/_1_extra_point" />
+
+            <Button
+                style="@style/score_button"
+                android:background="@color/white"
+                android:onClick="vikingsExtra2"
+                android:text="@string/_2_extra_point" />
+
+            <Button
+                style="@style/score_button"
+                android:background="@color/yellow"
+                android:onClick="vikingsFieldGoal"
+                android:text="@string/field_goal" />
+
+            <Button
+                style="@style/score_button"
+                android:background="@android:color/holo_purple"
+                android:onClick="vikingsSafety"
+                android:text="@string/safety" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/holo_green_dark" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:src="@drawable/panthers" />
+
+            <TextView
+                android:id="@+id/pantherScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="50sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:src="@drawable/carolina" />
+
+
+            <Button
+                style="@style/score_button"
+                android:background="@android:color/black"
+                android:onClick="panthersTouchDown"
+                android:text="@string/touch_down"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                style="@style/score_button"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="panthersExtra"
+                android:text="@string/_1_extra_point"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                style="@style/score_button"
+                android:background="@android:color/darker_gray"
+                android:onClick="panthersExtra2"
+                android:text="@string/_2_extra_point"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                style="@style/score_button"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="panthersFieldGoal"
+                android:text="@string/field_goal"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                style="@style/score_button"
+                android:background="@android:color/black"
+                android:onClick="panthersSafety"
+                android:text="@string/safety"
+                android:textColor="@android:color/background_light" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="7dp"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="reset"
+        android:text="@string/reset"
+        android:textAllCaps="false" />
+</LinearLayout>

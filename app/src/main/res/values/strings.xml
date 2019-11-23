@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ScoreKeeperApp</string>
+    <string name="reset">Reset</string>
+    <string name="field_goal">Field Goal</string>
+    <string name="_2_extra_point">2 Extra Points</string>
+    <string name="_1_extra_point"> Extra Point</string>
+    <string name="touch_down">Touch Down</string>
+    <string name="safety">safety</string>
+</resources>
